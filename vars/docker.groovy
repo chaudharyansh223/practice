@@ -1,5 +1,5 @@
 def call(image_version) {
-  """
+  def dockercontent = """
   FROM ${image_version}
   RUN apt-get update;apt-get install tree -y
   CMD ["tree", "--version"]
