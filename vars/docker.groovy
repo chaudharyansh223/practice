@@ -5,6 +5,6 @@ def call(image_version) {
   CMD ["tree", "--version"]
   """
   writeFile(file: 'Dockerfile', text: dockercontent)
-            sh "sudo docker build -t jenkins:1 ."
+            sh "docker build -t jenkins:1 ."
 }
     
